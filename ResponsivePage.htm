@@ -1,0 +1,65 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+<link rel="icon" type="image/png" href="favicon.png">
+<meta name="viewport" content="initial-scale = 1,width=device-width"/>
+<title>This shows at the top of the page</title>
+<link href="ResponsivePage.css" media="screen" rel="stylesheet" type="text/css"/>
+<style>
+A:link {
+ font-size: 250%;
+ color:#444;
+}
+details
+{
+    transition: height .5s ease;
+    overflow: hidden;
+}
+
+details:not([open])
+{
+    height: 2.25em;
+}
+
+details[open]
+{
+    height: 5.50em;
+}
+</style>
+</head>
+<body>
+Plain old text<br>
+
+<details><summary>Expandable text</summary>aaa</details>
+
+<br>UL list with links<br>
+<div class="ULlist">
+  <ul>
+    <li><a href="http://www.asdf.com">asdf</a></li>
+    <li><a href="http://www.apple.com">Apple</a></li>
+    <li><a href="http://www.music123.com" style="color:#0F0;">Music123</a></li>
+    <li><a href="http://www.musiciansfriend.com">Musicians Friend</a></li>
+  </ul>
+</div>
+
+<br>SpecialUL list no links<br>
+<div id="this_needs_to_match">
+  <ul>
+    <li style="color:#F00; font-size:1.2em;">Inline css here
+    <li>Item #2
+    <li>Item #3
+  </ul>
+</div>
+<div>
+  <ul>One more list
+    <li>Item #1a
+    <li>Item #2a
+    <li>Item #3a
+  </ul>
+</div>
+<table>
+<tr><td>Small table has more space-></td><td><-more space here</td></tr>
+<tr><td>line 2</td><td>done</td></tr>
+</table>
+</body>
+</html>
